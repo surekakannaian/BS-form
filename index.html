@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+<body>
+    <div class="container mt-5">
+        <form action="/action_page.php" class="neeeds-validation border p-4 mb-4 rounded-3">
+            <h2>REGISTRATION HERE</h2>
+            <div class="row">
+                <div class="col">
+                        <div class="input-group mt-3 mb-3">
+                        <i class="fa-solid fa-user input-group-text pt-3 "></i>
+                        <div class="form-floating ">
+                        <input type="text" class="form-control "  placeholder="fname" required  >
+                        <label for=""  class="form-label text-black">FIRST NAME</label>
+                       </div>
+                    </div>
+                </div>
+                <div class="col">
+                  
+                    <div class="form-floating mb-3 mt-3">      
+                       <input type="text" class="form-control" placeholder="lname" required>
+                       <label for="" class="form-label text-black">LAST NAME</label>
+                    
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3 mt-3 ">
+                        <i class="fa-solid fa-envelope input-group-text pt-3 "></i>
+                        <div class="form-floating ">
+                        <input type="email" class="form-control" placeholder="email" required >
+                        <label for="" class="form-label">Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating mb-3 mt-3">
+                       <input type="email" class="form-control " placeholder="confirm-email" required>
+                       <label for="" class="form-label text-black">Confirm-mail</label>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+          <!-- radio button-->
+          <div class="col">
+             <label for="" class="form-label">GENDER :</label>
+            <div class="form-check" >
+                <input type="radio" class="form-check-input" name="gender"  >
+                <label for="" class="form-check-label">MALE</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender"  >
+                <label for="" class="form-check-label">FEMALE</label>
+            </div>
+        </div>
+            <!--Check box--> 
+            <div class="col">
+            <label for="" class="form-label ">LANGUAGES KNOWN :</label>
+            <div class="form-check">
+                 <input type="checkbox" class="form-check-input" name="lang">
+                 <label for="" class="form-check-label">TAMIL</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="lang">
+                <label for="" class="form-check-label">ENGLISH</label>
+           </div>
+           <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="lang">
+              <label for="" class="form-check-label">HINDI</label>
+           </div>
+        </div>
+        </div>
+        <div class="row">
+            <!-- radio button-->
+            <div class="col">
+            <label for="" class="form-label mt-4">GRADUATE:</label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender"  >
+                <label for="" class="form-check-label">UG</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender"  >
+                <label for="" class="form-check-label">PG</label>
+            </div>
+        </div>
+            <!-- toggle switch-->
+            <div class="col">
+            <p class="mt-3">Any educational gap?</p>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" name="yes">
+                <label for="" class="form-check-label">YES</label>
+            </div>
+        </div>
+        </div>
+            <!--SELECT AND OPTION-->
+            <p class="mt-5">SPECIALIZATION :</p>
+            <select name="" id="" class="form-select w-50" >
+                <option value="">aaa</option>
+                <option value="">bbb</option>
+                <option value="">ccc</option>
+                <option value="">ddd</option>
+            </select>
+            <input type="submit" class="btn btn-primary mt-5">
+        </form>
+    </div>
+</body>
+</html>
